@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Independence Study</title>
+    <!-- Carica la libreria grafica Chart.js direttamente da internet -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f8f9fa; }
+        .chart-box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 4px 12px rgba(0,0,0,0.1); width: 80%; max-width: 800px; }
+    </style>
+</head>
+<body>
+
+    <div class="chart-box">
+        <canvas id="graficoConvergenza"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('graficoConvergenza').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Coarse (120k)', 'Medium (427k)', 'Fine (1.23M)'], // Numero di celle
+                datasets: [
+                    {
+                        label: 'Spinta (N)',
+                        data: [19.25, 20.58, 20.90],
+                        borderColor: '#1f77b4', // Blu elegante
+                        backgroundColor: '#1f77b4',
+                        yAxisID: 'ySpinta',
+                        tension: 0.2, // Arrotonda leggermente le linee
+                        pointRadius: 6
+                    },
+                    {
+                        label: 'Potenza (W)',
+                        data: [128.12, 136.10, 137.63],
+                        borderColor: '#d62728', // Rosso elegante
+                        backgroundColor: '#d62728',
+                        yAxisID: 'yPotenza',
+                        tension: 0.2,
+                        pointRadius: 6
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Grid Independence Study', font: { size: 20 } }
+                },
+                scales: {
+                    ySpinta: { 
+                        type: 'linear', display: true, position: 'left', 
+                        title: { display: true, text: 'Spinta (N)', font: { size: 14 } } 
+                    },
+                    yPotenza: { 
+                        type: 'linear', display: true, position: 'right', 
+                        title: { display: true, text: 'Potenza (W)', font: { size: 14 } },
+                        grid: { drawOnChartArea: false } // Evita che le griglie si sovrappongano
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

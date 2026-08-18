@@ -1,0 +1,21 @@
+# Ignora i log di calcolo pesanti
+log.*
+*.log
+
+# Ignora le cartelle dei tempi di OpenFOAM
+[1-9]*
+0.*
+
+# Ignora cartelle pesanti di post-processing ed esportazione
+VTK/
+postProcessing/
+
+# Ignora file temporanei
+.DS_Store
+*.swp
+constant/polyMesh/
+processor*
+[1-9]*
+postProcessing/
+0/cellLevel
+0/pointLevel

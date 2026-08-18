@@ -1,0 +1,12 @@
+=====================================
+    REPORT DATI ELICA 21 POLLICI     
+=====================================
+
+[1] DIMENSIONE GRIGLIA
+ cells: 1235717
+
+[2] PRESTAZIONI AERODINAMICHE FINALI
+ Effective power = -137.63035
+ Effective drag = 1.7935229
+ Effective lift = 20.903275
+
