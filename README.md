@@ -19,7 +19,7 @@ The following contours show the velocity magnitude at the blade section. Notice 
 
 <p align="center">
   <img src="coarse_mesh.png" width="32%" alt="Coarse Mesh Velocity">
-  <img src="medium_mesh.png" width="32%" alt="Medium Mesh Velocity">
+ <img src="elica_drone_medium/medium_mesh.png" width="32%" alt="Medium Mesh Velocity">
   <img src="fine_mesh.png" width="32%" alt="Fine Mesh Velocity">
 </p>
 <p align="center"><i>Left to Right: Coarse, Medium, and Fine mesh velocity contours.</i></p>
