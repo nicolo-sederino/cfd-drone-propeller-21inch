@@ -76,6 +76,6 @@ Given the rigid-rotor limitation, the CFD results are highly coherent and provid
 ---
 
 ## 👨‍💻 Author
-**[Nicolò Sederino]**
-- BSc Student in [Aerospace Enginnering] at [Sapienza Univeristy of Rome]
-- Aerodynamic and strctural enginner at: [Sapienza Flight Team - SASA]
+**Nicolò Sederino**
+- BSc Student in Aerospace Enginnering at Sapienza Univeristy of Rome
+- Aerodynamic and structural engineer at: Sapienza Flight Team - SASA
