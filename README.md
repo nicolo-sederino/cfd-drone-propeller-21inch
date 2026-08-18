@@ -29,7 +29,7 @@ The pressure contour highlights the extreme $\Delta P$ between the pressure (low
 
 <p align="center">
   <img src="fine_pressione.png" width="48%" alt="Pressure Contours">
-  <img src="fine_streamlines.png" width="48%" alt="Streamlines">
+  <img src="fine_streamlines_noncoerente.png" width="48%" alt="Streamlines">
 </p>
 
 ---
@@ -47,9 +47,9 @@ To guarantee that the solution is not dependent on the spatial discretization, t
 The jump from Coarse to Medium shows a significant variation in Thrust (+6.9%). However, further refinement from Medium to Fine yields an asymptotic behavior, with only a **+1.5% difference in Thrust**. This proves that the Fine mesh (1.23M cells) provides a stable, grid-independent solution.
 
 <p align="center">
-  <img src="residuals_plot.png" width="45%" alt="Simulation Residuals">
+  <img src="grafico_residui.png" width="45%" alt="Simulation Residuals">
   <!-- Add your Excel convergence chart here -->
-  <img src="convergence_plot.png" width="45%" alt="Grid Convergence Graph"> 
+  <img src="Pasted image.png" width="45%" alt="Grid Convergence Graph"> 
 </p>
 
 ---
