@@ -1,0 +1,16 @@
+# OpenFOAM Time Steps (ignora cartelle come 100, 200, 500 ecc.)
+[1-9]*
+![1-9]*/
+processor*
+postProcessing/
+
+# File di mesh pesanti
+*.obj
+*.eMesh
+
+# Log files di sistema
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
