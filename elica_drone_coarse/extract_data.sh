@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Crea o sovrascrive il file di report
-OUTPUT="Report_Simulazione.txt"
+OUTPUT="simulation_report.txt"   # era "Report_Simulazione.txt"
 
 echo "=====================================" > $OUTPUT
 echo "    REPORT DATI ELICA 21 POLLICI     " >> $OUTPUT
