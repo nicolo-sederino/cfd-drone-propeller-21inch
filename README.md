@@ -42,7 +42,7 @@ To guarantee that the solution is not dependent on the spatial discretization, t
 | **Medium** | 427,635    | 20.58      | 136.10    |
 | **Fine**   | 1,235,717  | 20.90      | 137.63    |
 
-![Simulation Residuals](grafico_residui.png) ![Grid Convergence Graph](gis_convergence_plot.png)
+![Simulation Residuals](residuals_plot.png) ![Grid Convergence Graph](gis_convergence_plot.png)
 
 ### Numerical Uncertainty (Grid Convergence Index)
 
