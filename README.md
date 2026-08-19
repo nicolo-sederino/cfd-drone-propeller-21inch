@@ -20,7 +20,7 @@ High-quality post-processing was performed to analyze the flow physics around th
 
 The following contours show the velocity magnitude at the blade section. Notice how the wake resolution and the blade tip vortices become significantly sharper and more physically accurate as the mesh is refined.
 
-![Coarse Mesh Velocity](coarse_mesh.png) ![Medium Mesh Velocity](elica_drone_medium/medium_mesh.png) ![Fine Mesh Velocity](fine_mesh.png)
+![Coarse Mesh Velocity](coarse_mesh.png) ![Medium Mesh Velocity](propeller_medium/medium_mesh.png) ![Fine Mesh Velocity](fine_mesh.png)
 
 *Left to Right: Coarse, Medium, and Fine mesh velocity contours.*
 
