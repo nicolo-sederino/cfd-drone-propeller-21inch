@@ -1,20 +1,21 @@
 #!/bin/bash
 
-# Crea o sovrascrive il file di report
-OUTPUT="simulation_report.txt"   # era "Report_Simulazione.txt"
+# Create or overwrite the report file
+OUTPUT="simulation_report.txt"
+
 echo "=====================================" > $OUTPUT
-echo "    REPORT DATI ELICA 21 POLLICI     " >> $OUTPUT
+echo "   21-INCH PROPELLER DATA REPORT     " >> $OUTPUT
 echo "=====================================" >> $OUTPUT
 echo "" >> $OUTPUT
 
-# Estrae il numero di celle
-echo "[1] DIMENSIONE GRIGLIA" >> $OUTPUT
+# Extract cell count
+echo "[1] GRID SIZE" >> $OUTPUT
 checkMesh | grep "cells:" | tr -s ' ' >> $OUTPUT
 echo "" >> $OUTPUT
 
-# Estrae le prestazioni finali
-echo "[2] PRESTAZIONI AERODINAMICHE FINALI" >> $OUTPUT
+# Extract final aerodynamic performance
+echo "[2] FINAL AERODYNAMIC PERFORMANCE" >> $OUTPUT
 grep -E "Effective lift|Effective drag|Effective power" log.foamRun | tail -n 3 >> $OUTPUT
 echo "" >> $OUTPUT
 
-echo "Estrazione completata. Controlla il file $OUTPUT"
+echo "Extraction complete. Check the file $OUTPUT"
